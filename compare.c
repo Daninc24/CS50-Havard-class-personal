@@ -8,11 +8,14 @@ int main(void)
 
     if (x < y){
         printf("Hello X is less than Y \n");
+        return 0;
     }
     else if (x > y){
         printf("Hello X is greater than y \n");
+        return 0;
     }
     else {
         printf("X is equal to Y\n");
+        return 0;
     }
 }
