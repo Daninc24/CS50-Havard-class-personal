@@ -5,7 +5,7 @@
 typedef struct MyStruct
 {
     string name;
-    string number
+    string number;
 }
 person;
 int main(void)
@@ -24,9 +24,9 @@ int main(void)
 
     for (int i = 0; i < 4; i++)
     {
-        if (strcmp(name, names[i]) == 0)
+        if (strcmp(name, people[i].name) == 0)
         {
-            printf("Number: %s\n", numbers[i]);
+            printf("Number: %s\n", people[i].number);
             return 0;
         }
     }
