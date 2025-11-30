@@ -46,5 +46,13 @@ int main(void)
     {
         printf("%d\n", ptr->data);
     }
+
+    // free memory
+    while (list != NULL)
+    {
+        node *next = list->next;
+        free(list);
+        list = next;
+    }
     return 0;
 }
