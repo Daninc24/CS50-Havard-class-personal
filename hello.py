@@ -1,4 +1,4 @@
-import cs50
+from cs50 import get_string
 
-name = cs50.get_string("What is your name? ")
+name = get_string("What is your name? ")
 print(f"Hello, {name}")
